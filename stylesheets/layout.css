@@ -1,0 +1,62 @@
+/* общие стили для страницы */
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 1440px;
+    display: block;
+    margin: 0 auto;
+    font-family: Fira Code;
+}
+
+.section_1 {
+width: 1440px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+}
+
+/* задний фон, изображения */
+
+/* .section_1::after {
+content: "";
+background-image: url(../images/letter@1.jpg);
+    width: 661px;
+    height: 349px;
+    display: block;
+    margin-top: 0;
+    margin-left: 545px;
+    margin-right: 233px;
+    position: absolute;
+    opacity: 0,2;
+} */
+
+/* .selection_1::after {
+content: "";
+background-image: url(../images/facewithstar.svg);
+    width: 1063px;
+    height: 1182px;
+    display: block;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0,2;
+} */
+
+/* .section_1 div:nth-of-type(3) img {
+    width: 661px;
+    height: 349px;
+} */
+/* .section_1 div:nth-of-type(4) img {
+    width: 1063px;
+    height: 1182px;
+} */
+.section_1 div:nth-of-type(1) H1 {
+    font-size: 197px;
+    font-weight: 500;
+}
+.section_1 div:nth-of-type(2) p {
+    font-size: 34px;
+    font-weight: 400;
+}

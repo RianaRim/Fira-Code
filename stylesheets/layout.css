@@ -1,62 +1,76 @@
 /* общие стили для страницы */
+
 * {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
-    width: 1440px;
-    display: block;
+    width: 700px;
+    display: grid;
+    place-items: center;
     margin: 0 auto;
-    font-family: Fira Code;
+    font-family: "Fira Code";
+}
+img {
+    display: block;
+}
+p {
+    font-size: 17px;
+    color: #822300;
+}
+h1 {
+    color: #822300;
+    font-size: 96px;
 }
 
-.section_1 {
-width: 1440px;
-margin: 0 auto;
-display: flex;
-justify-content: space-between;
+/* стили для fira.html */
+
+#fira {
+    overflow-x: hidden;
 }
-
-/* задний фон, изображения */
-
-/* .section_1::after {
-content: "";
-background-image: url(../images/letter@1.jpg);
-    width: 661px;
-    height: 349px;
+#fira section {
+    width: 700px;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: space-between;
+}
+#fira section div {
+    width: 48%;
     display: block;
-    margin-top: 0;
-    margin-left: 545px;
-    margin-right: 233px;
-    position: absolute;
-    opacity: 0,2;
-} */
-
-/* .selection_1::after {
-content: "";
-background-image: url(../images/facewithstar.svg);
-    width: 1063px;
-    height: 1182px;
-    display: block;
-    margin: 0 auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0,2;
-} */
-
-/* .section_1 div:nth-of-type(3) img {
-    width: 661px;
-    height: 349px;
-} */
-/* .section_1 div:nth-of-type(4) img {
-    width: 1063px;
-    height: 1182px;
-} */
-.section_1 div:nth-of-type(1) H1 {
-    font-size: 197px;
+}
+#fira h1 {
+    margin: 71px 342px auto 39px;
+    width: 100%;
     font-weight: 500;
+    font-size: 96px;
+    line-height: 96px;
 }
-.section_1 div:nth-of-type(2) p {
-    font-size: 34px;
+#fira p {
+    margin: 5px 394px auto 43px;
+    width: 263px;
     font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+/* стили для задних изображений */
+
+#fira img {
+    /* width: 322px; */
+    /* margin: 0 auto; */
+    display: block;
+}
+#firstSection .glif {
+    width: 322px;
+}
+#firstSection .divheadstar {
+    width: 517px;
+}
+#firstSection .textdif {
+    width: 374px;
+}
+#firstSelection .ASSCii {
+    width: 292px;
 }

@@ -8,69 +8,275 @@ html {
 }
 body {
     width: 700px;
-    display: grid;
-    place-items: center;
+    display: block;
     margin: 0 auto;
     font-family: "Fira Code";
-}
-img {
-    display: block;
-}
-p {
-    font-size: 17px;
-    color: #822300;
-}
-h1 {
-    color: #822300;
-    font-size: 96px;
-}
-
-/* стили для fira.html */
-
-#fira {
+    position: relative;
     overflow-x: hidden;
 }
-#fira section {
+
+/* задний фон */
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/maket.svg");
     width: 700px;
-    /* margin: 0 auto; */
-    display: flex;
-    justify-content: space-between;
+    height: 12882px;
+    opacity: 0.2;
+    z-index: -2;
 }
-#fira section div {
-    width: 48%;
-    display: block;
-}
-#fira h1 {
-    margin: 71px 342px auto 39px;
-    width: 100%;
-    font-weight: 500;
-    font-size: 96px;
-    line-height: 96px;
-}
-#fira p {
-    margin: 5px 394px auto 43px;
-    width: 263px;
-    font-weight: 400;
+
+p {
+    color: #822300;
     font-size: 17px;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: #822300;
+}
+.section-1 {
+display: flex;
+height: 650px;
+}
+.section-1 img {
+    position: relative;
+}
+.section-1 div:nth-of-type(1) p {
+font-size: 17px;
+font-weight: 400;
+padding-left: 43px;
+padding-top: 7px;
+line-height: 22px;
+}
+.section-1 div:nth-of-type(1) h1 {
+font-size: 96px;
+font-weight: 500;
+padding-top: 74px;
+padding-left: 38px;
+letter-spacing: -2px;
+}
+.section-1 div:nth-of-type(2) #glif {
+    width: 322px;
+    top: 0;
+    left: -5px;
+}
+.section-1 div:nth-of-type(2) #headstar {
+    width: 397px;
+    top: -125px;
+    left: 37px;
+}
+.section-1 div:nth-of-type(2) #textdif {
+    width: 374px;
+    top: -360px;
+    left: -127px;
+}
+.section-1 div:nth-of-type(2) #ASCCii {
+    width: 250px;
+    top: -725px;
+    left: -267px;
+    z-index: -1;
+}
+.section-2 {
+    height: 325px;
+}
+.section-2 div:nth-of-type(1) p {
+    margin-top: 133px;
+    margin-left: 300px;
     line-height: 22px;
 }
-
-/* стили для задних изображений */
-
-#fira img {
-    /* width: 322px; */
-    /* margin: 0 auto; */
-    display: block;
+.section-2 img {
+    position: relative;
 }
-#firstSection .glif {
-    width: 322px;
+.section-2 div:nth-of-type(2) #littlestar {
+    width: 45px;
+    top: -419px;
+    left: 609px;
 }
-#firstSection .divheadstar {
-    width: 517px;
+.section-2 div:nth-of-type(2) #AE {
+    width: 240px;
+    top: -260px;
+    left: -15px; 
 }
-#firstSection .textdif {
-    width: 374px;
+.section-2 div:nth-of-type(2) #U {
+    top: -216px;
+    left: -304px;
 }
-#firstSelection .ASSCii {
-    width: 292px;
+.section-2 div:nth-of-type(2) #smileface {
+    top: -10px;
+    left: -140px;
+}
+.section-2 div:nth-of-type(2) #threesmile {
+top: -285px;
+left: 110px;
+}
+.section-2 div:nth-of-type(2) #www {
+    top: -250px;
+    left: 250px;
+}
+.section-2 div:nth-of-type(2) #neheart {
+    top: -153px;
+    left: 92px;
+}
+.section-2 div:nth-of-type(2) #star2 {
+    top: -310px;
+}
+.section-3 img {
+    position: relative;
+}
+.section-3 {
+    height: 770px;
+}
+.section-3 div {
+    height: 630px;
+}
+.section-3 div:nth-of-type(1) #nikita {
+    top: 0;
+    z-index: -1;
+}
+.section-3 div:nth-of-type(1) #star3 {
+    top: -170px;
+    left: 30px;
+}
+.section-3 div:nth-of-type(1) #star4 {
+    top: -170px;
+    left: 447px;
+}
+.section-3 div:nth-of-type(2) p {
+    text-align: center;
+    margin-top: 44px;
+    line-height: 22px;
+}
+.section-4 img {
+    position: relative;
+}
+.section-4 {
+    height: 850px;
+}
+.section-4 div:nth-of-type(2) {
+    height: 850px;
+}
+.section-4 div:nth-of-type(1) h1 {
+font-size: 58px;
+font-weight: 500;
+text-align: center;
+margin-top: 25px;
+line-height: 64px;
+}
+.section-4 div:nth-of-type(2) #kubiki {
+    top: -125px;
+    z-index: -1;
+}
+.section-4 div:nth-of-type(2) #twohandred {
+top: -945px;
+left: 312px;
+}
+.section-4 div:nth-of-type(2) #onehandred {
+    top: -1142px;
+    left: 79px;
+}
+.section-4 div:nth-of-type(2) #foureight {
+    top: -1042px;
+    left: -205px;
+}
+.section-4 div:nth-of-type(2) #thirtysix {
+    top: -833px;
+    left: 194px;
+}
+.section-4 div:nth-of-type(2) #twentyone {
+    top: -845px;
+    left: 256px;
+}
+.section-5 img {
+    position: relative;
+}
+.section-5 div:nth-of-type(1) h1 {
+font-size: 68px;
+font-weight: 500;
+margin-left: 253px;
+margin-top: 8px;
+}
+.section-5 div:nth-of-type(1) h2 {
+font-size: 58px;
+font-weight: 700;
+margin-left: 306px;
+margin-top: 42px;
+line-height: 64px;
+}
+.section-5 div:nth-of-type(1) h3 {
+font-size: 58px;
+font-weight: 600;
+margin-top: 660px;
+padding-right: 361px;
+line-height: 64px;
+text-align: right;
+}
+.section-5 div:nth-of-type(1) h4 {
+font-size: 58px;
+font-weight: 500;
+margin-top: 470px;
+padding-right: 90px;
+line-height: 64px;
+text-align: right;
+}
+.section-5 div:nth-of-type(1) h5 {
+font-size: 58px;
+font-weight: 400;
+margin-top: 455px;
+padding-right: 357px;
+line-height: 64px;
+text-align: right;
+}
+.section-5 div:nth-of-type(1) h6 {
+font-size: 58px;
+font-weight: 300;
+margin-top: 504px;
+padding-right: 88px;
+line-height: 64px;
+text-align: right;
+}
+.section-5 div:nth-of-type(2) #A {
+top: -3239px;
+}
+.section-5 div:nth-of-type(2) #B {
+    top: -4119px;
+    left: 140px;
+}
+.section-5 div:nth-of-type(2) #C {
+    top: -5188px;
+}
+.section-5 div:nth-of-type(2) #D {
+    top: -6278px;
+    left: 140px;
+}
+.section-5 div:nth-of-type(2) #E {
+    top: -7307px;
+}
+.section-5 div:nth-of-type(2) #å {
+    top: -10645px;
+    left: 147px;
+}
+.section-5 div:nth-of-type(2) #ç {
+    top: -10072px;
+    left: 121px;
+}
+.section-5 div:nth-of-type(2) #é {
+    top: -9463px;
+    left: -174px;
+}
+.section-5 div:nth-of-type(2) #ø {
+    top: -9393px;
+    left: 368px;
+}
+.section-5 div:nth-of-type(2) #ñ {
+    top: -8646px;
+    left: -24px;
+}
+.section-5 div:nth-of-type(2) #chelik {
+    top: -11050px;
+    left: -9px;
+}
+.section-5 div:nth-of-type(2) #arrow {
+    top: -11431px;
+    left: 371px;
 }

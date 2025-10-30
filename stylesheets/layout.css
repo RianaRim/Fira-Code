@@ -19,7 +19,7 @@ body {
 
 /* задний фон */
 
-body::after {
+/* body::after {
     content: "";
     position: absolute;
     top: 0;
@@ -29,7 +29,7 @@ body::after {
     height: 12882px;
     opacity: 0.2;
     z-index: -2;
-}
+} */
 
 /* общие свойства текста */
 
@@ -452,30 +452,55 @@ top: -3239px;
     top: -10645px;
     left: 147px;
     mix-blend-mode: difference;
+    transition: all ease 1s;
+}
+
+.section-5 #å:hover {
+    transform: rotate(15deg);
 }
 
 .section-5 div:nth-of-type(2) #ç {
     top: -10072px;
     left: 121px;
     mix-blend-mode: difference;
+    transition: all ease 1s;
+}
+
+.section-5 #ç:hover {
+    transform: rotate(-15deg);
 }
 
 .section-5 div:nth-of-type(2) #é {
     top: -9463px;
     left: -174px;
     mix-blend-mode: difference;
+    transition: all ease 1s;
+}
+
+.section-5 #é:hover {
+    transform: rotate(15deg);
 }
 
 .section-5 div:nth-of-type(2) #ø {
     top: -9393px;
     left: 368px;
     mix-blend-mode: difference;
+    transition: all ease 1s;
+}
+
+.section-5 #ø:hover {
+    transform: rotate(-15deg);
 }
 
 .section-5 div:nth-of-type(2) #ñ {
     top: -8646px;
     left: -24px;
     mix-blend-mode: difference;
+    transition: all ease 1s;
+}
+
+.section-5 #ñ:hover {
+    transform: rotate(15deg);
 }
 
 #square5 {
@@ -574,6 +599,12 @@ left: 549px;
 .section-6 div:nth-of-type(2) #star6 {
     top: -118px;
     left: -102px;
+    transition: all ease 1s;
+    z-index: 2;
+}
+
+.section-6 #star6:hover {
+    transform: rotate(180deg);
 }
 
 .section-6 div:nth-of-type(3) #a {
@@ -808,5 +839,411 @@ left: 377px;
 }
 
 .section-9 div:nth-of-type(1) h1 {
-    
+font-size: 75px;
+font-weight: 500;
+letter-spacing: -1.5px;
+padding-right: 41px;
+margin-top: 39px;
+text-align: right;
 }
+
+.section-9 div:nth-of-type(1) h2 {
+font-size: 239px;
+font-weight: 500;
+margin-top: 240px;
+text-align: center;
+color: #FFF9FC;
+transition: all ease 1s;
+}
+
+.section-9 h2:hover {
+    opacity: 0.5;
+}
+
+.section-9 div:nth-of-type(1) p {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 40px;
+    color: #FFF9FC;
+    line-height: 47px;
+}
+
+.section-9 div:nth-of-type(1) h3 {
+font-size: 239px;
+font-weight: 500;
+margin-top: 57px;
+text-align: center;
+color: #FFF9FC;
+transition: all ease 1s;
+}
+
+.section-9 h3:hover {
+    opacity: 0.5;
+}
+
+.section-9 #oval {
+    top: -1281px;
+    left: 0;
+    z-index: -1;
+}
+
+/* секция 10 */
+
+.section-10 img {
+    position: relative;
+}
+
+.section-10 {
+    width: 700px;
+    height: 1500px;
+}
+
+.section-10 p {
+    position: relative;
+    top: -190px;
+    padding-bottom: 5px;
+}
+
+.section-10 div:nth-of-type(1) h1 {
+font-size: 75px;
+font-weight: 500;
+text-align: center;
+word-spacing: -30px;
+letter-spacing: 1px;
+margin-top: 89px;
+padding-left: 12px;
+line-height: 70px;
+}
+
+.section-10 div:nth-of-type(1) #r1 {
+    word-spacing: -7px;
+    text-align: center;
+}
+
+.section-10 div:nth-of-type(1) #r2 {
+    word-spacing: -5px;
+    text-align: center;
+}
+
+.section-10 div:nth-of-type(1) #r3 {
+    text-align: left;
+    padding-left: 44px;
+    word-spacing: -6px;
+}
+
+.section-10 div:nth-of-type(1) #r31 {
+    text-align: right;
+    padding-right: 44px;
+    top: -214px;
+    word-spacing: -6px;
+}
+
+.section-10 div:nth-of-type(1) #r4 {
+    text-align: left;
+    padding-left: 44px;
+    word-spacing: -6px;
+    top: -214px;
+}
+
+.section-10 div:nth-of-type(1) #r41 {
+    text-align: right;
+    padding-right: 44px;
+    top: -234px;
+    word-spacing: -6px;
+}
+
+.section-10 div:nth-of-type(1) #r5 {
+    text-align: left;
+    padding-left: 44px;
+    word-spacing: -9px;
+    top: -234px;
+}
+
+.section-10 div:nth-of-type(1) #r51 {
+    text-align: right;
+    padding-right: 44px;
+    top: -257px;
+    word-spacing: -7px;
+}
+
+.section-10 div:nth-of-type(1) #r6 {
+    text-align: left;
+    padding-left: 44px;
+    word-spacing: -6px;
+    top: -257px;
+}
+
+.section-10 div:nth-of-type(1) #r61 {
+    text-align: right;
+    padding-right: 44px;
+    top: -279px;
+    word-spacing: -6px;
+}
+
+.section-10 div:nth-of-type(1) #r7 {
+    text-align: left;
+    padding-left: 44px;
+    word-spacing: -7px;
+    letter-spacing: -0.3px;
+    top: -279px;
+}
+
+.section-10 div:nth-of-type(1) #r71 {
+    text-align: right;
+    padding-right: 44px;
+    top: -301px;
+    word-spacing: -6px;
+}
+.section-10 div:nth-of-type(1) #r8 {
+    text-align: left;
+    padding-left: 44px;
+    word-spacing: -7px;
+    top: -301px;
+}
+
+.section-10 div:nth-of-type(1) #r81 {
+    text-align: right;
+    padding-right: 44px;
+    top: -323px;
+    word-spacing: -6px;
+}
+
+.section-10 div:nth-of-type(1) #r9 {
+    text-align: left;
+    padding-left: 44px;
+    word-spacing: -8px;
+    letter-spacing: -0.2px;
+    top: -323px;
+}
+
+.section-10 div:nth-of-type(1) #r91 {
+    text-align: right;
+    padding-right: 44px;
+    top: -345px;
+    word-spacing: -6px;
+}
+
+.section-10 div:nth-of-type(1) #r10 {
+    text-align: center;
+    top: -346px;
+    word-spacing: -5px;
+}
+
+.section-10 div:nth-of-type(1) #r11 {
+    text-align: center;
+    top: -346px;
+    word-spacing: -4px;
+}
+
+.section-10 div:nth-of-type(1) #r12 {
+    text-align: center;
+    top: -346px;
+    word-spacing: -5px;
+}
+
+.section-10 div:nth-of-type(2) #star9 {
+    top: -810px;
+}
+
+.section-10 div:nth-of-type(2) #star10 {
+    top: -448px;
+    left: 457px;
+    transition: all ease 1s;
+}
+
+.section-10 #star10:hover {
+    transform: rotate(180deg);
+}
+
+/* секция 11 */
+
+.section-11 img {
+    position: relative;
+}
+
+.section-11 {
+    width: 700px;
+    height: 1500px;
+}
+
+.section-11 p {
+    position: relative;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 35px;
+    word-spacing: -1px;
+    color: #FFF9FC;
+    rotate: -14deg;
+    top: -1111px;
+    left: 165px;
+}
+
+.section-11 h1 {
+    position: relative;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 45px;
+    color: #FFF9FC;
+    rotate: 19deg;
+    top: -920px;
+    left: 420px;
+    transition: all ease 1s;
+}
+
+.section-11 h1:hover {
+    opacity: 0.5;
+}
+
+.section-11 h2 {
+    position: relative;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 45px;
+    color: #FFF9FC;
+    rotate: -8deg;
+    top: -946px;
+    left: 293px;
+    transition: all ease 1s;
+}
+
+.section-11 h2:hover {
+    opacity: 0.5;
+}
+
+.section-11 h3 {
+    position: relative;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: left;
+    color: #FFF9FC;
+    rotate: 9deg;
+    top: -719px;
+    left: 392px;
+    transition: all ease 1s;
+}
+
+.section-11 h3:hover {
+    opacity: 0.5;
+}
+
+.section-11 #list1 {
+    top: -2080px;
+    left: 80px;
+    z-index: -3;
+}
+
+.section-11 #list2 {
+    top: -2544px;
+    left: 220px;
+    z-index: -2;
+}
+
+.section-11 #book {
+    top: -3002px;
+    left: -1px;
+    z-index: -2;
+}
+
+.section-11 #list3 {
+    top: -3302px;
+    left: 290px;
+    z-index: -3;
+}
+
+.section-11 #list4 {
+    top: -3175px;
+    left: -180px;
+    z-index: -3;
+}
+
+.section-11 #list5 {
+    top: -3302px;
+    left: 353px;
+    z-index: -3;
+}
+
+/* секция 12 */
+
+.section-12 img {
+    position: relative;
+}
+
+.section-12 {
+    width: 700px;
+    height: 1500px;
+}
+
+.section-12 p {
+    font-size: 21px;
+    letter-spacing: -0.4px;
+    position: relative;
+    top: -1207px;
+    left: 71px;
+}
+
+.section-12 #r13 {
+    font-weight: 600;
+}
+
+.section-12 #r14 {
+    font-weight: 500;
+    top: -1202px;
+}
+
+.section-12 #r15 {
+    font-weight: 400;
+    top: -1223px;
+    left: 170px;
+}
+
+.section-12 #r16 {
+    font-weight: 500;
+    top: -1217px;
+}
+.section-12 #r17 {
+    font-weight: 400;
+    top: -1211px;
+}
+
+.section-12 #r18 {
+    font-weight: 500;
+    top: -1232px;
+    left: 120px;
+}
+
+.section-12 #r19 {
+    font-weight: 400;
+    top: -1225px;
+}
+
+.section-12 #spirals1 {
+    top: -1488px;
+    left: 266px;
+    z-index: -2;
+}
+
+.section-12 #spirals2 {
+    top: -1228px;
+    left: 266px;
+    z-index: -2;
+}
+
+.section-12 #spirals3 {
+    top: -1670px;
+    left: 310px;
+    transition: all ease 1s;
+}
+
+.section-12 #spirals3:hover {
+    transform: rotate(15deg);
+}
+
+.section-12 #hand {
+    top: -1798px;
+    left: 61px;
+    z-index: -1;
+}
+

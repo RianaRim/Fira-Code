@@ -194,7 +194,6 @@ left: 110px;
 
 .section-3 div {
     height: 630px;
-     transition: all ease 1s;
 }
 
 .section-3 div:nth-of-type(1) #nikita {
@@ -543,25 +542,29 @@ margin-top: 68px;
 }
 
 .section-8 {
-    height: 850px;
+    width: 700px;
+    height: 1500px;
+    overflow: hidden;
+}
+
+.section-8 div {
+    transition: all ease 3s;
 }
 
 .section-8 p {
     position: relative;
 }
 
-.outer {
-  overflow-x:hidden;
-  overflow-y: visible;
-}
-.inner {
-  position: absolute;
-  height: 1307px;
-  width: 1297px;
-  right: -50px;
-  top: 50px;
+.section-8 :nth-of-type(1) #firabold {
+    display: flex;
+    top: -158px;
+    left: -518px;
+    rotate: 360deg;
+    transform-origin: center;
 }
 
-.inner #firabold {
-    top: 7240px;
+.section-8 :nth-of-type(1):hover {
+    transform: rotate(360deg);
+    transition: all ease 3s;
 }
+

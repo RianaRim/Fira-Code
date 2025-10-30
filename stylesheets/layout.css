@@ -3,9 +3,11 @@
 * {
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     width: 700px;
     display: block;
@@ -16,6 +18,7 @@ body {
 }
 
 /* задний фон */
+
 body::after {
     content: "";
     position: absolute;
@@ -28,134 +31,213 @@ body::after {
     z-index: -2;
 }
 
+/* общие свойства текста */
+
 p {
     color: #822300;
     font-size: 17px;
 }
+
 h1,h2,h3,h4,h5,h6 {
     color: #822300;
 }
+
+/* секция 1 */
+
 .section-1 {
-display: flex;
 height: 650px;
 }
+
+.section-1 div:nth-of-type(1) #textdif {
+position: absolute;
+}
+
+.section-1 #square {
+position: relative;
+}
+
 .section-1 img {
     position: relative;
 }
+
 .section-1 div:nth-of-type(1) p {
 font-size: 17px;
 font-weight: 400;
-padding-left: 43px;
+padding-left: 44px;
 padding-top: 7px;
 line-height: 22px;
 }
-.section-1 div:nth-of-type(1) h1 {
+
+.section-1 div:nth-of-type(1) #fira {
 font-size: 96px;
 font-weight: 500;
 padding-top: 74px;
 padding-left: 38px;
 letter-spacing: -2px;
 }
+
+.section-1 div:nth-of-type(1) #textdif {
+font-size: 156px;
+font-weight: 500;
+line-height: 158px;
+letter-spacing: -2px;
+width: 374px;
+top: 380px;
+left: 139px;
+z-index: 2;
+color: #FFF9FC;
+mix-blend-mode: difference;
+}
+
+#square {
+    width: 374px;
+    height: 314px;
+    top: -710px;
+    left: 139px;
+    z-index: -3;
+    background: #FFF9FC;
+}
+
 .section-1 div:nth-of-type(2) #glif {
     width: 322px;
-    top: 0;
-    left: -5px;
+    top: -339px;
+    left: 263px;
 }
+
 .section-1 div:nth-of-type(2) #headstar {
     width: 397px;
-    top: -125px;
-    left: 37px;
+    top: -462px;
+    left: 303px;
 }
-.section-1 div:nth-of-type(2) #textdif {
-    width: 374px;
-    top: -360px;
-    left: -127px;
-}
+
 .section-1 div:nth-of-type(2) #ASCCii {
     width: 250px;
-    top: -725px;
-    left: -267px;
-    z-index: -1;
+    top: -393px;
+    left: -406px;
+    z-index: -2;
 }
+
+.section-1 div:nth-of-type(3) #square {
+    width: 250px;
+    top: -393px;
+    left: -406px;
+    background-color: #FFF9FC;
+    z-index: -3;
+}
+
+/* секция 2 */
+
 .section-2 {
     height: 325px;
 }
+
 .section-2 div:nth-of-type(1) p {
     margin-top: 133px;
     margin-left: 300px;
     line-height: 22px;
 }
+
 .section-2 img {
     position: relative;
 }
+
 .section-2 div:nth-of-type(2) #littlestar {
     width: 45px;
     top: -419px;
     left: 609px;
 }
+
 .section-2 div:nth-of-type(2) #AE {
     width: 240px;
-    top: -260px;
-    left: -15px; 
+    top: -269px;
+    left: -11px; 
 }
+
 .section-2 div:nth-of-type(2) #U {
     top: -216px;
     left: -304px;
 }
+
 .section-2 div:nth-of-type(2) #smileface {
     top: -10px;
     left: -140px;
 }
+
 .section-2 div:nth-of-type(2) #threesmile {
 top: -285px;
 left: 110px;
 }
+
 .section-2 div:nth-of-type(2) #www {
     top: -250px;
     left: 250px;
 }
+
 .section-2 div:nth-of-type(2) #neheart {
     top: -153px;
     left: 92px;
 }
+
 .section-2 div:nth-of-type(2) #star2 {
     top: -310px;
 }
+
+/* секция 3 */
+
 .section-3 img {
     position: relative;
 }
+
 .section-3 {
     height: 770px;
 }
+
 .section-3 div {
     height: 630px;
+     transition: all ease 1s;
 }
+
 .section-3 div:nth-of-type(1) #nikita {
     top: 0;
     z-index: -1;
+       
 }
+
+.section-3 div:nth-of-type(1):hover {
+    transform: rotate(360deg);
+    transition: all ease 1s;
+}
+
 .section-3 div:nth-of-type(1) #star3 {
     top: -170px;
     left: 30px;
 }
+
 .section-3 div:nth-of-type(1) #star4 {
     top: -170px;
     left: 447px;
 }
+
 .section-3 div:nth-of-type(2) p {
     text-align: center;
     margin-top: 44px;
     line-height: 22px;
 }
+
+/* секция 4 */
+
 .section-4 img {
     position: relative;
 }
+
 .section-4 {
     height: 850px;
 }
+
 .section-4 div:nth-of-type(2) {
     height: 850px;
 }
+
 .section-4 div:nth-of-type(1) h1 {
 font-size: 58px;
 font-weight: 500;
@@ -163,39 +245,54 @@ text-align: center;
 margin-top: 25px;
 line-height: 64px;
 }
+
 .section-4 div:nth-of-type(2) #kubiki {
     top: -125px;
     z-index: -1;
 }
+
 .section-4 div:nth-of-type(2) #twohandred {
 top: -945px;
 left: 312px;
 }
+
 .section-4 div:nth-of-type(2) #onehandred {
     top: -1142px;
     left: 79px;
 }
+
 .section-4 div:nth-of-type(2) #foureight {
     top: -1042px;
     left: -205px;
 }
+
 .section-4 div:nth-of-type(2) #thirtysix {
     top: -833px;
     left: 194px;
 }
+
 .section-4 div:nth-of-type(2) #twentyone {
     top: -845px;
     left: 256px;
 }
+
+/* секция 5 */
+
 .section-5 img {
     position: relative;
 }
+
+.section-5 {
+    height: 3000px;
+}
+
 .section-5 div:nth-of-type(1) h1 {
 font-size: 68px;
 font-weight: 500;
 margin-left: 253px;
 margin-top: 8px;
 }
+
 .section-5 div:nth-of-type(1) h2 {
 font-size: 58px;
 font-weight: 700;
@@ -203,6 +300,7 @@ margin-left: 306px;
 margin-top: 42px;
 line-height: 64px;
 }
+
 .section-5 div:nth-of-type(1) h3 {
 font-size: 58px;
 font-weight: 600;
@@ -211,6 +309,7 @@ padding-right: 361px;
 line-height: 64px;
 text-align: right;
 }
+
 .section-5 div:nth-of-type(1) h4 {
 font-size: 58px;
 font-weight: 500;
@@ -219,6 +318,7 @@ padding-right: 90px;
 line-height: 64px;
 text-align: right;
 }
+
 .section-5 div:nth-of-type(1) h5 {
 font-size: 58px;
 font-weight: 400;
@@ -227,6 +327,7 @@ padding-right: 357px;
 line-height: 64px;
 text-align: right;
 }
+
 .section-5 div:nth-of-type(1) h6 {
 font-size: 58px;
 font-weight: 300;
@@ -235,48 +336,232 @@ padding-right: 88px;
 line-height: 64px;
 text-align: right;
 }
+
 .section-5 div:nth-of-type(2) #A {
 top: -3239px;
 }
+
 .section-5 div:nth-of-type(2) #B {
     top: -4119px;
     left: 140px;
 }
+
 .section-5 div:nth-of-type(2) #C {
     top: -5188px;
 }
+
 .section-5 div:nth-of-type(2) #D {
     top: -6278px;
     left: 140px;
 }
+
 .section-5 div:nth-of-type(2) #E {
     top: -7307px;
 }
+
 .section-5 div:nth-of-type(2) #å {
     top: -10645px;
     left: 147px;
 }
+
 .section-5 div:nth-of-type(2) #ç {
     top: -10072px;
     left: 121px;
 }
+
 .section-5 div:nth-of-type(2) #é {
     top: -9463px;
     left: -174px;
 }
+
 .section-5 div:nth-of-type(2) #ø {
     top: -9393px;
     left: 368px;
 }
+
 .section-5 div:nth-of-type(2) #ñ {
     top: -8646px;
     left: -24px;
 }
+
 .section-5 div:nth-of-type(2) #chelik {
     top: -11050px;
     left: -9px;
 }
+
 .section-5 div:nth-of-type(2) #arrow {
     top: -11431px;
     left: 371px;
+}
+
+/* секция 6 */
+
+.section-6 img {
+    position: relative;
+}
+
+.section-6 {
+    height: 850px;
+}
+
+.section-6 p {
+    position: relative;
+}
+
+.section-6 div:nth-of-type(1) h1 {
+font-size: 99px;
+font-weight: 500;
+text-align: center;
+margin-top: 248px;
+line-height: 95px;
+}
+
+.section-6 div:nth-of-type(1) p {
+    text-align: center;
+    margin-top: 10px;
+    line-height: 22px;
+}
+
+.section-6 div:nth-of-type(2) #star5 {
+top: -400px;
+left: 549px;
+}
+
+.section-6 div:nth-of-type(2) #star6 {
+    top: -118px;
+    left: -102px;
+}
+
+.section-6 div:nth-of-type(3) #a {
+font-size: 505px;
+color: black;
+top: -181px;
+left: 0;
+}
+
+.section-6 div:nth-of-type(3) #r {
+font-size: 505px;
+color: black;
+top: -535px;
+left: 210px; 
+}
+
+.section-6 div:nth-of-type(3) #i {
+font-size: 505px;
+color: black;
+top: -1133px;
+left: 397px; 
+}
+
+.section-6 div:nth-of-type(3) #arrow2 {
+top: -1671px;
+left: 295px;
+}
+
+.section-6 div:nth-of-type(3) #circle1 {
+top: -1402px;
+left: 78px;
+}
+
+.section-6 div:nth-of-type(3) #circle2 {
+top: -1437px;
+left: 179px;
+}
+
+.section-6 div:nth-of-type(3) #circle3 {
+top: -1584px;
+left: 88px;
+}
+
+/* секция 7 */
+
+.section-7 img {
+    position: relative;
+}
+
+.section-7 {
+    height: 550px;
+}
+
+.section-7 p {
+    position: relative;
+}
+
+.section-7 #t1 {
+text-align: center;
+margin-top: 34px;
+line-height: 22px;
+}
+
+.section-7 #t2 {
+    text-align: right;
+    padding-top: 111px;
+    padding-right: 40px;
+line-height: 22px;
+}
+
+.section-7 #t3 {
+line-height: 22px;
+top: -71px;
+padding-left: 39px;
+}
+
+.section-7 #t4 {
+    text-align: center;
+line-height: 22px;
+margin-top: 68px;
+}
+
+.section-7 div:nth-of-type(2) #gran {
+    top: -570px;
+}
+
+.section-7 div:nth-of-type(2) #scull {
+    top: -393px;
+    left: 5px;
+}
+
+.section-7 div:nth-of-type(2) #smileface2 {
+    top: -860px;
+    left: 485px;
+}
+
+.section-7 div:nth-of-type(2) #star7 {
+    top: -475px;
+    left: 294px;
+}
+
+.section-7 div:nth-of-type(2) #star8 {
+    top: -465px;
+    left: -418px;
+}
+
+/* секция 8 */
+
+.section-8 img {
+    position: relative;
+}
+
+.section-8 {
+    height: 850px;
+}
+
+.section-8 p {
+    position: relative;
+}
+
+.outer {
+  overflow-x:hidden;
+  overflow-y: visible;
+}
+.inner {
+  position: absolute;
+  height: 1307px;
+  width: 1297px;
+  right: -50px;
+  top: 50px;
+}
+
+.inner #firabold {
+    top: 7240px;
 }
